@@ -253,19 +253,21 @@ function Cards() {
                 products.map((product) => {
                 return(
             <>
-            <div class="container text-center">
-            <div class="row row-cols-2">
-                <div class="card" style={{width: "300px"}}>
-                    <img src={product.image} class="card-img-top" alt="..." />
-                    <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style={{width: "250px"}}  >
+                        <img src={product.image} class="card-img-top" alt="..." />
+                        <div class="card-body">
                         <h5 class="card-title">{product.title}</h5>
                         <p class="card-text"> {product.description}</p>
                         <h3>{product.price}</h3>
                         <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
+                    </div>
+                    </div >
                 </div>
-                </div>
-                </div>
+            </div>
             </>
             )
             }

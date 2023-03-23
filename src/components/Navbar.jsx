@@ -12,20 +12,23 @@ function Navbar() {
           <Link to="/" class="nav-link active" aria-current="page" >Home</Link>
         </li>
         <li class="nav-item">
-          <Link to="/account" class="nav-link active" aria-current="page" >Account</Link>
+          <Link to="/authors" class="nav-link active" aria-current="page" >Authors</Link>
         </li>
         <li class="nav-item">
-          <Link to="/post" class="nav-link active" aria-current="page" >Post</Link>
-        </li>
-        <li class="nav-item">
-          <Link to="/message" class="nav-link active" aria-current="page" >Message</Link>
+          <Link to="/category" class="nav-link active" aria-current="page" >Category</Link>
         </li>
         
+        
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        
+        <li class="nav-item ">
+          <Link to="/signin" class="nav-link active" aria-current="page" >Signin</Link>
+        </li>
+      </ul>
+      
     </div>
   </div>
 </nav>
